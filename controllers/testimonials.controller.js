@@ -9,7 +9,9 @@ const TestimonialControllers = {
 
         const testimonials = await Testimonial.find();
 
-        res.json(testimonials)
+        setTimeout(function() {
+            res.json(testimonials)
+        }, 3000);
     },
 
     async store(req, res){
